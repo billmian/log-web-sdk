@@ -1,6 +1,6 @@
 {
   "name": "daimian-log-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "team-log-web-sdk",
   "main": "src/index.js",
   "scripts": {
@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
-    "circular-dependency-plugin": "^5.2.2"
+    "circular-dependency-plugin": "^5.2.2",
+    "uuid": "^8.3.2"
   }
 }

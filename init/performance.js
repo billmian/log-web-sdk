@@ -1,15 +1,15 @@
-export default function performance(ctx) {
-  const { performance } = ctx;
+export default function performance(option) {
+  const { performance } = option;
   if (!performance) {
     return;
   }
 
-  let t = window.performance;
+  const { timing: t } = window.performance;
+
   if (!performance) {
     console.log("您的浏览器不支持performance属性");
     return;
   }
-
   let times = {};
   //重定向时间
   times.redirectTime = t.redirectEnd - t.redirectStart;

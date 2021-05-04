@@ -1,9 +1,10 @@
-import performance from "./performance";
+import device from "./device";
 
-export default function middleware(ctx) {
-  let context = ctx;
-  const middlewareArr = [performance]; //这里进行注册中间件，不关心中间件干了什么
-  middlewareArr.forEach((middlewareItem) => {
-    context = middlewareItem(context);
-  });
+export default async function middleware(option, data) {
+  //控制反转
+  const middlewareArr = [device];
+  for (let i = 0; i < middlewareArr.length; i++) {
+    const middlewareItem = middlewareArr[i];
+    await middlewareItem(option, data);
+  }
 }

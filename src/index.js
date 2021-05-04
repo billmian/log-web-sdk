@@ -1,5 +1,3 @@
-function Test() {
-  console.log("这里输出performance", window.performance);
-}
+import DmLog from "./DmLog";
 
-export default Test;
+export default DmLog;
