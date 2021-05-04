@@ -1,0 +1,32 @@
+{
+  "name": "daimian-log-sdk",
+  "version": "1.0.0",
+  "description": "team-log-web-sdk",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/billmian/log-web-sdk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/billmian/log-web-sdk/issues"
+  },
+  "homepage": "https://github.com/billmian/log-web-sdk#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.0",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.6.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "circular-dependency-plugin": "^5.2.2"
+  }
+}
